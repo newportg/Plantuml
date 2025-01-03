@@ -19,11 +19,13 @@ const plantumlBlock = createComponent({
     },
     render: async ({ props, state }) => {
         return (
-            <block>
-                <button label={state.message} onPress={{ action: 'say' }} />
-            </block>
+          <block>
+            <box>
+              <text>Hello world</text>
+            </box>
+          </block>
         );
-    }
+      }
 });
 
 export default createIntegration({
