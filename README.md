@@ -3,7 +3,7 @@
 Welcome to my GitBook!
 
 <block>
-    <img src="https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700001">
+    <img src="www.plantuml.com/plantuml/png/SoWkIImgAStDuNBAJrBGjLDmpCbCJbMmKiX8pSd9vt98pKi1IW80">
 </block>
 
 ```plantuml
