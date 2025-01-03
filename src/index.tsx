@@ -11,12 +11,6 @@ const plantumlBlock = createComponent({
             content: props.content || defaultContent,
         };
     },
-    action: async (previous, action) => {
-        switch (action.action) {
-            case 'say':
-                return { state: { message: 'Hello world' } };
-        }
-    },
     render: async ({ props, state }) => {
         return (
           <block>
