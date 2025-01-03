@@ -15,12 +15,8 @@ summary: |
 
 visibility: public
 script: ./src/index.tsx
-scopes: []
 blocks:
-    - id: plantuml
-      title: Plantuml diagram
-      description: Diagram by writing code with Markdown inspired text definitions.
-      markdown:
-          codeblock: plantuml
-          body: content
-target: space
+    - id: helloworld
+      title: Hello world
+      urlUnfurl:
+        - https://myapp.com/

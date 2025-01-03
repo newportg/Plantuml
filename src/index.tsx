@@ -1,17 +1,34 @@
-import { createIntegration, createComponent } from '@gitbook/runtime';
+import { createComponent, createIntegration } from '@gitbook/runtime';
 
-// const defaultContent = `@startuml
-//   a -> b
-//   @enduml`;
+interface BlockProps {
+ id: string;
+}
 
-const plantumlBlock = createComponent({
+const plantuml = createComponent<BlockProps>({
   componentId: 'plantuml',
-  async render() {
-    return ('Hello World');
+  async action(block, action) {
+    if (action.action === '@link.unfurl') {
+      return {
+        props: {
+          id: action.url.slice('https://myapp.com/'.length)
+        }
+      };
+    }
+  },
+  
+  async render(block) {
+    const { id } = block.props;
+  
+    return (
+      <block>
+        <box>
+          <text>Hello {id}!</text>
+        </box>
+      </block>
+    );
   }
 });
 
 export default createIntegration({
-    components: [plantumlBlock]
+  components: [plantuml]
 });
-
