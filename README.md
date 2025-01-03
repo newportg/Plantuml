@@ -11,5 +11,21 @@ a -> b
 ```
 
 ***
+```plantuml
+@startuml
 
+a -> b
+
+@enduml
+```
+
+***
+
+```puml
+@startuml
+
+a -> b
+
+@enduml
+```
 ***
