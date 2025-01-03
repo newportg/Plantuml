@@ -1,6 +1,6 @@
 import { createIntegration, createComponent } from '@gitbook/runtime';
 
-const helloWorldBlock = createComponent({
+const plantumlBlock = createComponent({
     componentId: 'plantuml',
     initialState: {
         message: 'Say hello!'
@@ -21,5 +21,5 @@ const helloWorldBlock = createComponent({
 });
 
 export default createIntegration({
-    components: [helloWorldBlock]
+    components: [plantumlBlock]
 });
