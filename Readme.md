@@ -9,8 +9,10 @@ a -> b
 
 @enduml
 ```
+----
 
 {% plantuml %}
 Bob->Alice : hello
 {% endplantuml %}
 
+----
