@@ -2,7 +2,7 @@
 
 Welcome to my GitBook!
 
-```markup
+```plant-uml
 @startuml
 
 a -> b
