@@ -1,7 +1,7 @@
 import { createIntegration, createComponent } from '@gitbook/runtime';
 
 const helloWorldBlock = createComponent({
-    componentId: 'hello-world',
+    componentId: 'plantuml',
     initialState: {
         message: 'Say hello!'
     },
