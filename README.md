@@ -2,7 +2,7 @@
 
 Welcome to my GitBook!
 
-```helloworld
+```plantuml
 ```
 
 ```plant-uml

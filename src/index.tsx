@@ -27,7 +27,7 @@ import { createIntegration, createComponent } from '@gitbook/runtime';
 // });
 
 const helloWorld = createComponent({
-  componentId: 'helloworld',
+  componentId: 'plantuml',
   async render() {
     return (
       <block>
