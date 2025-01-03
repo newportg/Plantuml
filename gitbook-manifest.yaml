@@ -1,0 +1,26 @@
+name: plantuml
+title: Plantuml
+organization: Zoomalong
+description: Build diagrams and visualizations using Markdown-inspired text definitions and code.
+summary: |
+    # Overview
+
+    Plantuml lets you create diagrams and visualizations using text and code. If you are familiar with Markdown you should have no problem learning.
+
+    # How it works
+
+    Once the integration is installed, insert the Plantuml block into any page. You can edit the code content and preview how it looks using the live editor.
+
+    When using the GitHub integrations, all code blocks with the plantuml syntax will be replaced by diagram. All diagrams inserted from the editor will be formatted as such code blocks in Markdown.
+
+visibility: public
+script: ./src/index.tsx
+scopes: []
+blocks:
+    - id: plantuml
+      title: Plantuml diagram
+      description: Diagram by writing code with Markdown inspired text definitions.
+      markdown:
+          codeblock: plantuml
+          body: content
+target: space
