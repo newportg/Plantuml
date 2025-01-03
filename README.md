@@ -6,6 +6,9 @@ Welcome to my GitBook!
     <img src="www.plantuml.com/plantuml/png/SoWkIImgAStDuNBAJrBGjLDmpCbCJbMmKiX8pSd9vt98pKi1IW80">
 </block>
 
+<block name=plantuml>
+</block>
+
 ```plantuml
 ```
 
