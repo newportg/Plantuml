@@ -7,13 +7,7 @@ import { createIntegration, createComponent } from '@gitbook/runtime';
 const plantumlBlock = createComponent({
   componentId: 'plantuml',
   async render() {
-    return (
-      <block>
-        <box>
-          <text>Hello world</text>
-        </box>
-      </block>
-    );
+    return ('Hello World');
   }
 });
 
