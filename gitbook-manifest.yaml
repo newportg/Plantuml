@@ -23,4 +23,6 @@ blocks:
       markdown:
           codeblock: plantuml
           body: content
+    - id: helloworld
+      title: Hello World
 target: space
