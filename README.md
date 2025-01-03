@@ -7,6 +7,7 @@ Welcome to my GitBook!
 </block>
 
 <block name=plantuml>
+Block plantuml
 </block>
 
 ```plantuml
