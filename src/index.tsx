@@ -1,9 +1,15 @@
 import { createIntegration, createComponent } from '@gitbook/runtime';
 
+const defaultContent = `@startuml
+  a -> b
+  @enduml`;
+
 const plantumlBlock = createComponent({
     componentId: 'plantuml',
-    initialState: {
-        message: 'Say hello!'
+    initialState: (props) => {
+        return {
+            content: props.content || defaultContent,
+        };
     },
     action: async (previous, action) => {
         switch (action.action) {
