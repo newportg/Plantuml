@@ -4,29 +4,7 @@ import { createIntegration, createComponent } from '@gitbook/runtime';
 //   a -> b
 //   @enduml`;
 
-// const plantumlBlock = createComponent({
-//     componentId: 'plantuml',
-//     initialState: (props) => {
-//         return {
-//             content: props.content || defaultContent,
-//         };
-//     },
-//     render: async ({ props, state }) => {
-//         return (
-//           <block>
-//             <box>
-//               <text>Hello world</text>
-//             </box>
-//           </block>
-//         );
-//       }
-// });
-
-// export default createIntegration({
-//     components: [plantumlBlock]
-// });
-
-const helloWorld = createComponent({
+const plantumlBlock = createComponent({
   componentId: 'plantuml',
   async render() {
     return (
@@ -40,5 +18,6 @@ const helloWorld = createComponent({
 });
 
 export default createIntegration({
-  components: [helloWorld]
+    components: [plantumlBlock]
 });
+
